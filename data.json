@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "First task",
+    "description": "Description for first task",
+    "completed": true
+  },
+  {
+    "id": 2,
+    "title": "Second task",
+    "description": "Description for second task",
+    "completed": true
+  },
+  {
+    "id": 3,
+    "title": "Third task",
+    "description": "Description for third task",
+    "completed": false
+  },
+  {
+    "id": 4,
+    "title": "Fourth task",
+    "description": "Description for fourth task",
+    "completed": false
+  },
+  {
+    "id": 5,
+    "title": "Fifth task",
+    "description": "Description for fifth task",
+    "completed": false
+  }
+]

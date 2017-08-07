@@ -1,0 +1,34 @@
+.todo-form {
+  padding: 1em;
+  margin-bottom: 1em;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+  border-radius: 2px;
+  width: 100%;
+  background-color: white;
+}
+
+.todo-form > * {
+  width: 100%;
+}
+
+.todo-form textarea {
+  width: 100%;
+  height: 150px;
+  resize: none;
+  margin: 10px 0;
+}
+
+.todo-form input:focus,
+.todo-form textarea:focus {
+  border: 1px solid #1976D2;
+}
+
+.todo-form input:focus.ng-invalid.ng-dirty,
+.todo-form textarea:focus.ng-invalid.ng-dirty {
+  border: 1px solid #dd0031;
+}
+
+.todo-form .button-container {
+  display: flex;
+  justify-content: center;
+}

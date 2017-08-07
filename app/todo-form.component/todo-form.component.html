@@ -1,0 +1,23 @@
+<form
+  class="todo-form"
+  (ngSubmit)="onSubmit(); todoForm.reset()"
+  #todoForm="ngForm">
+  <input
+    type="text"
+    name="title"
+    [(ngModel)]="title"
+    placeholder="What do you have to do?"
+    required>
+  <textarea
+    name="description"
+    [(ngModel)]="description"
+    placeholder="Task description">
+  </textarea>
+  <div class="button-container">
+    <button
+      type="submit"
+      [disabled]="todoForm.form.invalid">
+        Add task
+    </button>
+  </div>
+</form>
