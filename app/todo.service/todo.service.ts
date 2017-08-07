@@ -13,7 +13,15 @@ export class TodoService {
   constructor(private httpService: HttpService) {}
 
   createTodo(title: string, description: string = '') {
-    let nextId = this.todos[this.todos.length - 1].id + 1;
+    let nextId;
+    
+    if(this.todos.length) {
+      nextId = this.todos[this.todos.length - 1].id + 1;
+    } 
+    else {
+      nextId = 1;
+    }
+
     let todo = new Todo(nextId, title, description);
     this.todos.push(todo);
   }
