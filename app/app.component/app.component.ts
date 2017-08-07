@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  title = 'My Todo App';
+  title = 'Todo App';
 }

@@ -1,17 +1,18 @@
 <header>
-  <img src="img/angular.svg" alt="">
-  <h1>{{ title }}</h1>
+  <div class="logo">
+    <img src="img/angular.svg" alt="">
+    <h1>{{ title }}</h1>
+  </div>
+  <nav>
+    <ul>
+      <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+        <a routerLink="">Home</a>
+      </li>
+      <li routerLinkActive="active">
+        <a routerLink="/todo-list">Todo List</a>
+      </li>
+    </ul>
+  </nav>
 </header>
-
-<nav>
-  <ul>
-    <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-      <a routerLink="">Home</a>
-    </li>
-    <li routerLinkActive="active">
-      <a routerLink="/todo-list">Todo List</a>
-    </li>
-  </ul>
-</nav>
 
 <router-outlet></router-outlet>
