@@ -5,7 +5,7 @@
     </i>
   </button>
 
-  <span class="title">{{ todo.title }}</span>
+  <a routerLink="{{'/todo/' + todo.id}}"><span class="title">{{ todo.title }}</span></a>
 
   <div class="actions">
     <button class="delete icon" (click)="onDelete()">

@@ -3,7 +3,15 @@
   <h1>{{ title }}</h1>
 </header>
 
-<main>
-  <todo-form></todo-form>
-  <todo-list></todo-list>
-</main>
+<nav>
+  <ul>
+    <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+      <a routerLink="">Home</a>
+    </li>
+    <li routerLinkActive="active">
+      <a routerLink="/todo-list">Todo List</a>
+    </li>
+  </ul>
+</nav>
+
+<router-outlet></router-outlet>

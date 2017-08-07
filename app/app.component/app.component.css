@@ -19,17 +19,30 @@ header h1 {
   margin: 0 0 0 10px;
 }
 
-main {
-  width: 600px;
-  margin: auto;
-  padding: 2rem;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
+nav {
+  margin-bottom: 10px;
 }
 
-todo-form,
-todo-list {
-  width: 100%;
+nav ul {
+  padding: 10px;
+  overflow: hidden;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li:not(:first-child) {
+  margin-left: 20px;
+}
+
+nav ul li.active {
+  border-bottom: 2px solid lightcoral;
+  color: lightcoral;
+}
+
+nav ul li a {
+  font-size: 22px;
+  color: inherit;
+  text-decoration: none;
 }
