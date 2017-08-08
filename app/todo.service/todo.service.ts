@@ -33,6 +33,13 @@ export class TodoService {
     });
   }
 
+  getTodo(id: number): Observable<{}> {
+    return this.httpService.getTodoList().map((data: Response) => {
+      let todos = data.json();
+      return todos.find((todo: Todo) => todo.id == id);
+    });
+  }
+
   toggleTodo(todo: Todo) {
     todo.completed = !todo.completed;
   }

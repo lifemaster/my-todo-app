@@ -1,4 +1,4 @@
-<div class="todo-list" *ngIf="todos.length">
+<div class="todo-list card" *ngIf="todos.length">
   <todo-item
     *ngFor="let todo of todos" [todo]="todo"
     (delete)="delete($event)"
