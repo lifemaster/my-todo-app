@@ -1,9 +1,12 @@
 <main>
-  <div class="card">
+  <div class="card" *ngIf="title">
     <h2>
       {{ title }}
       <span *ngIf="completed">(completed)</span>
     </h2>
     <p>{{ description }}</p>
+  </div>
+  <div class="card" *ngIf="!title">
+    <p class="alert">This task doesn't exist!</p>
   </div>
 </main>

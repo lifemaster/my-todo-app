@@ -19,7 +19,7 @@ export class TodoListComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.todoService.getTodos().subscribe(todos => this.todos = todos);
+    this.todoService.todosBehavior.subscribe(todos => this.todos = todos);
   }
 
   toggle(todo: Todo) {

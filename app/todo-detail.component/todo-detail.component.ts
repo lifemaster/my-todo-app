@@ -11,7 +11,7 @@ import { Todo } from '../todo/todo';
   styleUrls: [ 'todo-detail.component.css' ]
 })
 
-export class TodoDetailComponent implements OnInit{
+export class TodoDetailComponent implements OnInit {
   id: number;
   title: string;
   description: string;
@@ -22,10 +22,12 @@ export class TodoDetailComponent implements OnInit{
   }
 
   ngOnInit() {
-    this.todoService.getTodo(this.id).subscribe((todo: Todo) => {
+    let todo = this.todoService.getTodo(this.id);
+
+    if(todo) {
       this.title = todo.title;
       this.description = todo.description;
       this.completed = todo.completed;
-    });
+    }
   }
 }

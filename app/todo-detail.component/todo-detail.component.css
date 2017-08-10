@@ -9,3 +9,8 @@ h2 {
 h2 span {
   color: forestgreen;
 }
+
+p.alert {
+  text-align: center;
+  color: lightcoral;
+}
